@@ -5,10 +5,13 @@ def run_guessing_game
 user_number_guess = gets.chomp
 if rand_number.to_s == user_number_guess
   puts "You guessed the correct number! "
-elsif rand_number.to_s != user_number_guess
+elsif rand_number == "exit"
+     puts "Goodbye!"
+  #puts "Sorry! The computer guessed rand_number "
+else
   puts "Sorry! The computer guessed rand_number "
-elsif run_guessing_game == "exit"
-   puts "Goodbye!"
+# else run_guessing_game == "exit"
+#    puts "Goodbye!"
 end
 
 end
