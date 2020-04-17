@@ -8,7 +8,7 @@ if rand_number.to_s == user_number_guess
 elsif rand_number.to_s != user_number_guess
   puts "Sorry! The computer guessed rand_number "
 elsif run_guessing_game == "exit"
-   "Goodbye!"
+   puts "Goodbye!"
 end
 
 end
